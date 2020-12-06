@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Link from 'next/link';
 import css from './featured-article.module.css';
 
@@ -15,3 +16,12 @@ export default function FeaturedArticle({ featuredArticle }) {
 		</div>
 	);
 }
+
+FeaturedArticle.propTypes = {
+	featuredArticle: PropTypes.shape({
+		slug: PropTypes.string,
+		imgLink: PropTypes.string,
+		title: PropTypes.string,
+		description: PropTypes.string,
+	}).isRequired,
+};

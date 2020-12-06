@@ -1,0 +1,63 @@
+:root {
+        /* Brand Colors */
+        --color-red-brand01: #ff1f2c;
+        --color-red-brand02: #c7202c;
+        --color-red-brand03: #ac1b25;
+
+        /* Transactional Colors */
+        --color-green-transaction01: #27865f;
+        --color-green-transaction02: #227553;
+        --color-green-transaction03: #0d5136;
+        --color-green-transaction04: #0a402a;
+
+        /* Call To Action Colors */
+        --color-blue-cta01: #0272a2;
+        --color-blue-cta02: #026089;
+
+        /* Grayscale UI Colors */
+        --color-gray-text01: #2f3337;
+        --color-gray-text02: #545658;
+        --color-gray-text03: #626669;
+        --color-gray-ui01: #e7e8ea;
+        --color-gray-ui02: #f5f6f7;
+        --color-gray-ui03: #f9fafb;
+        --color-gray-ui04: #dadcdf;
+        --color-gray-ui05: #ced1d5;
+        --color-gray-ui06: #afb3ba;
+
+        --color-white-text-inverse01: #ffffff;
+
+        /* Secondary UI Colors */
+        --color-blue-clubO01: #08b3c6;
+        --color-blue-clubO02: #1ea9bd;
+        --color-blue-clubO03: #248a9c;
+
+        --color-yellow-stars: #f39019;
+        --color-yellow-alert: #d28d01;
+
+        /* Font Weight */
+        --font-weight-normal: 400;
+        --font-weight-bold: 700;
+
+        /* Title Fonts */
+        --font-size-title-xxxl: 36px;
+        --font-size-title-xxl: 32px;
+        --font-size-title-xl: 28px;
+        --font-size-title-lg: 24px;
+        --font-size-title-md: 20px;
+        --font-size-title-sm: 18px;
+        --font-size-title-xs: 16px;
+        --font-size-title-xxs: 14px;
+
+        /* Body Fonts */
+        --font-size-body-sm: 12px;
+        --font-size-body-md: 14px;
+        --font-size-body-lg: 16px;
+        --font-weight-body-sm: 400;
+        --font-weight-body-md: 500;
+        --font-weight-body-lg: 600;
+
+        /* Product renderer specific vars below */
+        --tooltip-z-index: 5;
+        --page-max-width: 1220px;
+}
