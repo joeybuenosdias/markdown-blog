@@ -1,17 +1,13 @@
 import PropTypes from 'prop-types';
-import Link from 'next/link';
+import FeaturedArticle from '../components/featured-article/featured-article';
+import PostsList from '../components/posts-list/posts-list';
 
-export default function Index({ posts = [] }) {
+export default function Index({ posts = [], featuredArticle = {} }) {
+	console.log('featuredArticle', featuredArticle);
 	return (
 		<div>
-			{posts.map((item) => (
-				<Link key={item.title} href={`/posts/${item.slug}`}>
-					<div>
-						<h3>{item.title}</h3>
-						<p>{item.description}</p>
-					</div>
-				</Link>
-			))}
+			<FeaturedArticle featuredArticle={featuredArticle} />
+			<PostsList posts={posts} />
 		</div>
 	);
 }
@@ -21,8 +17,12 @@ Index.propTypes = {
 };
 
 Index.getInitialProps = async () => {
-	const config = await import('../config.json');
+	const config = await import('../posts.json');
+	const featured = await import('../featuredArticle.json');
+	// console.log('feaured', featured);
 	const posts = config.default;
+	const featuredArticle = featured.default;
+	// console.log('featuredArticle', featuredArticle);
 
-	return { posts };
+	return { posts, featuredArticle };
 };
