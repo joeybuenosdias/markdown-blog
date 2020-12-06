@@ -1,8 +1,17 @@
-export default function PostTemplate(props) {
-	console.log('props', props);
+import matter from 'gray-matter';
+import ReactMarkdown from 'react-markdown'
+
+export default function PostTemplate({ slug, frontmatter, content }) {
+	console.log('slug', slug);
+	console.log('frontmatter', frontmatter);
+	console.log('content', content);
 	return (
 		<div>
-			Post template
+			<h1>{frontmatter.title}</h1>
+			<span>{frontmatter.date}</span>
+			<ReactMarkdown>
+				{content}
+			</ReactMarkdown>
 		</div>
 	);
 }
@@ -10,5 +19,9 @@ export default function PostTemplate(props) {
 PostTemplate.getInitialProps = async (context) => {
 	const { slug } = context.query;
 
-	return { slug };
+	const post = await import(`../../content/${slug}/${slug}.md`);
+	// console.log('content', content);
+	const { data, content } = matter(post.default);
+
+	return { slug, frontmatter: data, content };
 };

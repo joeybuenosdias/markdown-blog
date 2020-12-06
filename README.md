@@ -16,9 +16,13 @@ node_modules
 
 2. Set up linter
 
-`yarn add eslint babel-eslint eslint-config-airbnb eslint-import-resolver-alias eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks -D`
+`yarn add eslint babel-eslint eslint-config-airbnb eslint-import-resolver-alias eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks prop-types -D`
 
 3. Add React
 ```
 yarn add react react-dom next
 ```
+
+Resources:
+
+https://www.pullrequest.com/blog/build-a-blog-with-nextjs-and-markdown/
