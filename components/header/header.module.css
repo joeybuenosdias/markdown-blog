@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-red-brand03);
+    height: 30vh;
+    color: white;
+    text-align: center;
+}

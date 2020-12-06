@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+// import Header from '../components/header/header';
 import FeaturedArticle from '../components/featured-article/featured-article';
 import PostsList from '../components/posts-list/posts-list';
 
@@ -6,6 +7,7 @@ import PostsList from '../components/posts-list/posts-list';
 export default function Index({ posts = [], featuredArticle = {} }) {
 	return (
 		<div>
+			{/* <Header /> */}
 			<FeaturedArticle featuredArticle={featuredArticle} />
 			<PostsList posts={posts} />
 		</div>

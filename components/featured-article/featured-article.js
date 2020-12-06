@@ -9,8 +9,10 @@ export default function FeaturedArticle({ featuredArticle }) {
 			<Link href={featuredArticle.slug}>
 				<div>
 					<img alt="food" className={css.featuredImage} src={featuredArticle.imgLink} />
-					<h3>{featuredArticle.title}</h3>
-					<p>{featuredArticle.description}</p>
+					<div className={css.textContent}>
+						<h3 className={css.title}>{featuredArticle.title}</h3>
+						<p className={css.description}>{featuredArticle.description}</p>
+					</div>
 				</div>
 			</Link>
 		</div>
