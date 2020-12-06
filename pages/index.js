@@ -1,14 +1,12 @@
 export default function Index() {
-    return (
-        <div>
-            I am the Home page
-        </div>
-    )
+	return (
+		<div>
+			I am the Home page
+		</div>
+	);
 }
 
-Index.getInitialProps = () => {
-    return {
-        title: 'Sookies Blog',
-        subtitle: 'I like fish',
-    }
-}
+Index.getInitialProps = () => ({
+	title: 'Sookies Blog',
+	subtitle: 'I like fish',
+});
