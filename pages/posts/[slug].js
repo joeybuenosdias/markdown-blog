@@ -9,9 +9,7 @@ export default function PostTemplate({ slug, frontmatter, content }) {
 		<div>
 			<h1>{frontmatter.title}</h1>
 			<span>{frontmatter.date}</span>
-			<ReactMarkdown>
-				{content}
-			</ReactMarkdown>
+			<ReactMarkdown source={content} />
 		</div>
 	);
 }
