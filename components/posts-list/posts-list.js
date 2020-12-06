@@ -5,14 +5,20 @@ import css from './post-list.module.css';
 export default function PostsList({ posts = [] }) {
 	return (
 		<div className={css.postListContainer}>
-			{posts.map((item) => (
-				<Link key={item.title} href={`/posts/${item.slug}`}>
-					<div>
-						<h3>{item.title}</h3>
-						<p>{item.description}</p>
-					</div>
-				</Link>
-			))}
+			<h2>Articles</h2>
+			<div>
+				{posts.map((item) => (
+					<Link key={item.title} href={`/posts/${item.slug}`}>
+						<div className={css.post}>
+							<img alt={item.thumbnailAlt} className={css.thumbnail} src={item.thumbnail} />
+							<div className={css.postText}>
+								<h3 className={css.title}>{item.title}</h3>
+								<p className={css.description}>{item.description}</p>
+							</div>
+						</div>
+					</Link>
+				))}
+			</div>
 		</div>
 	);
 }
