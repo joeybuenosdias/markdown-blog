@@ -1,5 +1,5 @@
 ---
-title: "LOOSE LEAF VS CONVENTIONAL TEA BAGS: MAIN DIFFERENCES YOU SHOULD KNOW"
+title: "Loose Leaf vs Conventional Tea Bags: Main Differences You Should Know"
 date: "2020-11-25"
 author: "Sarah Thomas"
 ---

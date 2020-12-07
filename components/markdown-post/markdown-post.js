@@ -5,7 +5,7 @@ import css from './markdown-post.module.css';
 export default function MarkdownPost({ frontmatter, content }) {
 	return (
 		<div className={css.postContainer}>
-			<h1>{frontmatter.title}</h1>
+			<h1 className={css.title}>{frontmatter.title}</h1>
 			<div>{frontmatter.date}</div>
 			<div>
 				Written by:&nbsp;
