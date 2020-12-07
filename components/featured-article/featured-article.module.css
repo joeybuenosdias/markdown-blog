@@ -25,3 +25,23 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+@media (min-width: 720px) {
+    .featuredContent {
+        display: flex;
+    }
+
+    .featuredImage {
+        width: 450px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+    }
+}

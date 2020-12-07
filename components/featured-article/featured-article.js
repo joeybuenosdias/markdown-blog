@@ -7,7 +7,7 @@ export default function FeaturedArticle({ featuredArticle }) {
 	return (
 		<div className={css.featuredContainer}>
 			<Link href={featuredArticle.slug}>
-				<div>
+				<div className={css.featuredContent}>
 					<img alt="food" className={css.featuredImage} src={featuredArticle.imgLink} />
 					<div className={css.textContent}>
 						<h3 className={css.title}>{featuredArticle.title}</h3>
