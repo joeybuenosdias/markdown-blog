@@ -1,5 +1,5 @@
 ---
-title: "SIMPLE TIPS TO HELP YOUR DIET"
+title: "Simple Tips To Help Your Diet"
 date: "2020-11-23"
 author: "Cosette Jarrett"
 ---

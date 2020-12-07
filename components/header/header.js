@@ -5,7 +5,7 @@ export default function Header() {
 	return (
 		<Link href="/">
 			<header className={css.header}>
-				<h1>Fresh Food</h1>
+				<h1>Freshy</h1>
 			</header>
 		</Link>
 	);

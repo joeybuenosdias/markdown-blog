@@ -1,5 +1,5 @@
 ---
-title: "WHAT ARE THE FINANCIAL BENEFITS OF USING AN INSTANT POT?"
+title: "What are the Financial Benefits Of Using An Instant Pot?"
 date: "2020-10-01"
 author: "Jane Marsh"
 ---
