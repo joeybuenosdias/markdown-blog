@@ -1,15 +1,9 @@
-import matter from 'gray-matter';
 import PropTypes from 'prop-types';
-import ReactMarkdown from 'react-markdown';
+import matter from 'gray-matter';
+import MarkdownPost from '../../components/markdown-post/markdown-post';
 
 export default function PostTemplate({ frontmatter, content }) {
-	return (
-		<div>
-			<h1>{frontmatter.title}</h1>
-			<span>{frontmatter.date}</span>
-			<ReactMarkdown source={content} />
-		</div>
-	);
+	return <MarkdownPost frontmatter={frontmatter} content={content} />;
 }
 
 PostTemplate.propTypes = {

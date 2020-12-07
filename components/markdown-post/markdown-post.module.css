@@ -1,0 +1,13 @@
+.postContainer {
+    padding: 8px 16px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.author {
+    text-decoration: underline;
+}
+
