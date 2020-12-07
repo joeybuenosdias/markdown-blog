@@ -1,9 +1,15 @@
 import PropTypes from 'prop-types';
 import matter from 'gray-matter';
+import Header from '../../components/header/header';
 import MarkdownPost from '../../components/markdown-post/markdown-post';
 
 export default function PostTemplate({ frontmatter, content }) {
-	return <MarkdownPost frontmatter={frontmatter} content={content} />;
+	return (
+		<>
+			<Header />
+			<MarkdownPost frontmatter={frontmatter} content={content} />
+		</>
+	);
 }
 
 PostTemplate.propTypes = {
